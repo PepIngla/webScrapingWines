@@ -49,9 +49,11 @@ def crawler_buttons(seed_url, scraper, num_max = -1):
     options = Options()
     ua = UserAgent()
     userAgent = ua.random
-    print(userAgent)
     options.add_argument(f'user-agent={userAgent}')
     driver = webdriver.Chrome(options=options)
+    actUserAgent = driver.execute_script("return navigator.userAgent;")
+    assert userAgent == actUserAgent
+    print(actUserAgent)
     driver.get(seed_url)
     # First we need to click on the cookie accepting button
     buttons = driver.find_elements(by=By.TAG_NAME, value="button")
