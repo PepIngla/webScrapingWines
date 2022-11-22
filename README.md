@@ -41,12 +41,12 @@ Suckling: String, Suckling rating.  If it is not available, the value is "".
 
 Tim_atkin: String, Tim Atkin rating.  If it is not available, the value is "".
 
-Price: String, the price of the wine.
+Price: String, the current price of the wine.
 
-Old_price: String, if the wine is on discount, it indicates the old price.
+Old_price: String, if the wine is on offer, it indicates the old price.
 
-Offer: Boolean, True if the wine is on discount, False otherwise.
+Offer: Boolean, True if the wine is on offer, False otherwise.
 
-Volume: String, indicates the volume of the bottle.indica el volum de l’ampolla. The default value in case it is not on the website is: “ / bot. 0,75 L “.
+Volume: String, indicates the volume of the bottle. The default value is: “ / bot. 0,75 L “.
 
 Image: bytes, an image of the wine bottle.
