@@ -30,7 +30,7 @@ def scraper_wine(HTML):
     '''
     
     # apply beautifoulsoup to the request
-    soup = BeautifulSoup(HTML,features="lxml")
+    soup = BeautifulSoup(HTML,features="html.parser")
     
     df = pd.DataFrame(columns=["type","name","year","cellar","region","country","varieties",
                                "eco","rating","stars","opinions","likes","parker","penin",
