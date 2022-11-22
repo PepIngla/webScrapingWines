@@ -10,4 +10,4 @@ seed_urls = ['https://www.vinissimus.com/es/vinos/rosado',
              'https://www.vinissimus.com/es/vinos/blanco',
              'https://www.vinissimus.com/es/vinos/tinto']
 
-df = link_crawler(seed_urls, scraper_wine, delay=1, num_max=2)
+df = link_crawler(seed_urls, scraper_wine, delay=1, num_max=20)
